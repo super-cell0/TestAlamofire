@@ -32,7 +32,8 @@ class TestCollectionViewController: UIViewController {
     
 }
 
-extension TestCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension TestCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout , UICollectionViewDelegate{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }
