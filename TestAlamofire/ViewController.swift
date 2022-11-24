@@ -10,8 +10,6 @@ import Alamofire
 import Moya
 
 
-
-
 struct Test1: Codable {
     let q: String
     let token: String
@@ -29,8 +27,8 @@ class ViewController: UIViewController {
         print("requesting...")
         //alamofireModel.getAllUserData()
         //test1Alamofire()
-       //tets2Alamofire()
-        testMoya()
+        //tets2Alamofire()
+        //testMoya()
         
     }
 
@@ -99,7 +97,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
 
 }
 
@@ -146,4 +143,5 @@ extension MoyaTest: TargetType {
     }
   
 }
+
 

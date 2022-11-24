@@ -15,6 +15,10 @@
 		04E701E3292CEE2F00FC8CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E701E1292CEE2F00FC8CB7 /* Main.storyboard */; };
 		04E701E5292CEE3000FC8CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E701E4292CEE3000FC8CB7 /* Assets.xcassets */; };
 		04E701E8292CEE3000FC8CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E701E6292CEE3000FC8CB7 /* LaunchScreen.storyboard */; };
+		1CB17907292F06C600A22CBA /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB17906292F06C600A22CBA /* TestCollectionViewController.swift */; };
+		1CB17909292F073200A22CBA /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB17908292F073200A22CBA /* TestCollectionViewCell.swift */; };
+		1CB1790B292F14CD00A22CBA /* CompositionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1790A292F14CD00A22CBA /* CompositionalViewController.swift */; };
+		1CB1790D292F151100A22CBA /* CompositionalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1790C292F151100A22CBA /* CompositionalCollectionViewCell.swift */; };
 		79905171BAD8D5E2398F8A58 /* Pods_TestAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335AEE4A5E7C4C32650B793B /* Pods_TestAlamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		04E701E4292CEE3000FC8CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E701E7292CEE3000FC8CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E701E9292CEE3000FC8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB17906292F06C600A22CBA /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
+		1CB17908292F073200A22CBA /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CB1790A292F14CD00A22CBA /* CompositionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalViewController.swift; sourceTree = "<group>"; };
+		1CB1790C292F151100A22CBA /* CompositionalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewCell.swift; sourceTree = "<group>"; };
 		335AEE4A5E7C4C32650B793B /* Pods_TestAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E09A98D4394820B821D44 /* Pods-TestAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamofire.debug.xcconfig"; path = "Target Support Files/Pods-TestAlamofire/Pods-TestAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		9A951FE54E06432279F9BA26 /* Pods-TestAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamofire.release.xcconfig"; path = "Target Support Files/Pods-TestAlamofire/Pods-TestAlamofire.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,17 +75,37 @@
 		04E701DA292CEE2F00FC8CB7 /* TestAlamofire */ = {
 			isa = PBXGroup;
 			children = (
+				1CB17905292F060800A22CBA /* testCollection */,
 				04E701DB292CEE2F00FC8CB7 /* AppDelegate.swift */,
 				04E701DD292CEE2F00FC8CB7 /* SceneDelegate.swift */,
 				04E701DF292CEE2F00FC8CB7 /* ViewController.swift */,
-				04CBF055292CF46000723E70 /* AlamofireRequest.swift */,
-				04CBF057292D03AD00723E70 /* AlamofireModel.swift */,
+				1CB17904292F05DA00A22CBA /* testAlamofire */,
 				04E701E1292CEE2F00FC8CB7 /* Main.storyboard */,
 				04E701E4292CEE3000FC8CB7 /* Assets.xcassets */,
 				04E701E6292CEE3000FC8CB7 /* LaunchScreen.storyboard */,
 				04E701E9292CEE3000FC8CB7 /* Info.plist */,
 			);
 			path = TestAlamofire;
+			sourceTree = "<group>";
+		};
+		1CB17904292F05DA00A22CBA /* testAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+				04CBF055292CF46000723E70 /* AlamofireRequest.swift */,
+				04CBF057292D03AD00723E70 /* AlamofireModel.swift */,
+			);
+			path = testAlamofire;
+			sourceTree = "<group>";
+		};
+		1CB17905292F060800A22CBA /* testCollection */ = {
+			isa = PBXGroup;
+			children = (
+				1CB17906292F06C600A22CBA /* TestCollectionViewController.swift */,
+				1CB17908292F073200A22CBA /* TestCollectionViewCell.swift */,
+				1CB1790A292F14CD00A22CBA /* CompositionalViewController.swift */,
+				1CB1790C292F151100A22CBA /* CompositionalCollectionViewCell.swift */,
+			);
+			path = testCollection;
 			sourceTree = "<group>";
 		};
 		6630FC82D07284E4A908D6BE /* Frameworks */ = {
@@ -215,7 +243,11 @@
 				04E701E0292CEE2F00FC8CB7 /* ViewController.swift in Sources */,
 				04E701DC292CEE2F00FC8CB7 /* AppDelegate.swift in Sources */,
 				04CBF056292CF46000723E70 /* AlamofireRequest.swift in Sources */,
+				1CB1790D292F151100A22CBA /* CompositionalCollectionViewCell.swift in Sources */,
+				1CB17909292F073200A22CBA /* TestCollectionViewCell.swift in Sources */,
+				1CB1790B292F14CD00A22CBA /* CompositionalViewController.swift in Sources */,
 				04CBF058292D03AD00723E70 /* AlamofireModel.swift in Sources */,
+				1CB17907292F06C600A22CBA /* TestCollectionViewController.swift in Sources */,
 				04E701DE292CEE2F00FC8CB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
